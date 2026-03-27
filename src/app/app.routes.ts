@@ -67,27 +67,27 @@ export const routes: Routes = [
       {
         path: 'forms',
         data: { title: 'Forms Module' },
-        loadComponent: () => import('./features/placeholder/placeholder.component').then(m => m.PlaceholderComponent)
+        loadComponent: () => import('./features/forms/forms.component').then(m => m.FormsComponent)
       },
       {
         path: 'tables',
         data: { title: 'Tables & Grids' },
-        loadComponent: () => import('./features/placeholder/placeholder.component').then(m => m.PlaceholderComponent)
+        loadComponent: () => import('./features/tables/tables.component').then(m => m.TablesComponent)
       },
       {
         path: 'ui-elements',
         data: { title: 'UI Elements Collection' },
-        loadComponent: () => import('./features/placeholder/placeholder.component').then(m => m.PlaceholderComponent)
+        loadComponent: () => import('./features/ui-elements/ui-elements.component').then(m => m.UiElementsComponent)
       },
       {
         path: 'charts',
         data: { title: 'Charts & Visualizations' },
-        loadComponent: () => import('./features/placeholder/placeholder.component').then(m => m.PlaceholderComponent)
+        loadComponent: () => import('./features/charts/charts.component').then(m => m.ChartsComponent)
       },
       {
         path: 'settings',
         data: { title: 'Application Settings' },
-        loadComponent: () => import('./features/placeholder/placeholder.component').then(m => m.PlaceholderComponent)
+        loadComponent: () => import('./features/settings/settings.component').then(m => m.SettingsComponent)
       }
     ]
   },

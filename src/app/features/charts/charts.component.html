@@ -1,0 +1,68 @@
+<div class="h-full w-full bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 p-4 sm:p-8 animate-fade-in relative z-0">
+  
+  <div class="mb-8 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+    <div>
+      <h1 class="text-3xl font-bold text-slate-900 dark:text-white tracking-tight">Charts & Data</h1>
+      <p class="text-slate-500 dark:text-slate-400 mt-2">Beautiful data visualizations using ApexCharts.</p>
+    </div>
+    
+    <div class="flex items-center gap-2 bg-white dark:bg-slate-800 p-1.5 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700/60">
+      <button class="px-4 py-1.5 text-sm font-medium rounded-lg bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">Monthly</button>
+      <button class="px-4 py-1.5 text-sm font-medium rounded-lg text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700">Quarterly</button>
+      <button class="px-4 py-1.5 text-sm font-medium rounded-lg text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700">Yearly</button>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    
+    <!-- Area Chart (Full Width Span on lg) -->
+    <div class="lg:col-span-2 bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 dark:border-slate-700/60 transition-all hover:shadow-md h-[450px]">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-bold text-slate-900 dark:text-white">Revenue vs Expenses</h2>
+        <button class="p-2 text-slate-400 hover:text-blue-500 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Chart Wrapper -->
+      <div class="w-full h-full pb-10">
+        <apx-chart
+          [series]="areaChartOptions.series"
+          [chart]="areaChartOptions.chart"
+          [xaxis]="areaChartOptions.xaxis"
+          [yaxis]="areaChartOptions.yaxis"
+          [stroke]="areaChartOptions.stroke"
+          [tooltip]="areaChartOptions.tooltip"
+          [dataLabels]="areaChartOptions.dataLabels"
+          [colors]="areaChartOptions.colors"
+          [fill]="areaChartOptions.fill"
+          [grid]="areaChartOptions.grid"
+          [theme]="areaChartOptions.theme">
+        </apx-chart>
+      </div>
+    </div>
+
+    <!-- Donut Chart -->
+    <div class="lg:col-span-1 bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 dark:border-slate-700/60 transition-all hover:shadow-md h-[450px]">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-bold text-slate-900 dark:text-white">Traffic Sources</h2>
+      </div>
+      
+      <div class="w-full h-full flex items-center justify-center pb-10">
+        <apx-chart
+          [series]="donutChartOptions.series"
+          [chart]="donutChartOptions.chart"
+          [labels]="donutChartOptions.labels"
+          [responsive]="donutChartOptions.responsive"
+          [colors]="donutChartOptions.colors"
+          [stroke]="donutChartOptions.stroke"
+          [legend]="donutChartOptions.legend"
+          [theme]="donutChartOptions.theme">
+        </apx-chart>
+      </div>
+    </div>
+
+  </div>
+</div>
