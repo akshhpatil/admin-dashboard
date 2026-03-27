@@ -12,6 +12,18 @@ export const routes: Routes = [
       import('./features/login/login.component')
         .then(m => m.LoginComponent),
   },
+  {
+    path: 'signup',
+    loadComponent: () =>
+      import('./features/signup/signup.component')
+        .then(m => m.SignupComponent),
+  },
+  {
+    path: '404',
+    loadComponent: () =>
+      import('./features/not-found/not-found.component')
+        .then(m => m.NotFoundComponent),
+  },
 
   // PROTECTED LAYOUT SHELL
   {
@@ -51,9 +63,34 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./features/profile/profile.component')
             .then(m => m.ProfileComponent)
+      },
+      {
+        path: 'forms',
+        data: { title: 'Forms Module' },
+        loadComponent: () => import('./features/placeholder/placeholder.component').then(m => m.PlaceholderComponent)
+      },
+      {
+        path: 'tables',
+        data: { title: 'Tables & Grids' },
+        loadComponent: () => import('./features/placeholder/placeholder.component').then(m => m.PlaceholderComponent)
+      },
+      {
+        path: 'ui-elements',
+        data: { title: 'UI Elements Collection' },
+        loadComponent: () => import('./features/placeholder/placeholder.component').then(m => m.PlaceholderComponent)
+      },
+      {
+        path: 'charts',
+        data: { title: 'Charts & Visualizations' },
+        loadComponent: () => import('./features/placeholder/placeholder.component').then(m => m.PlaceholderComponent)
+      },
+      {
+        path: 'settings',
+        data: { title: 'Application Settings' },
+        loadComponent: () => import('./features/placeholder/placeholder.component').then(m => m.PlaceholderComponent)
       }
     ]
   },
 
-  { path: '**', redirectTo: 'dashboard' }
+  { path: '**', redirectTo: '404' }
 ];

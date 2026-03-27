@@ -1,59 +1,54 @@
-# AdminDashboard
+<div align="center">
+  <br />
+  <h1>Ultimate Angular Boilerplate 🚀</h1>
+  <p>The Most Modern, Production-Ready Angular 20+ Admin Dashboard Starter Kit</p>
+  <p>Built with standalone components, Tailwind CSS v3, and the latest Angular control flow.</p>
+</div>
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.11.
+## Features ✨
 
-## Development server
+*   **100% Standalone Components**: Modern Angular architecture without the need for `NgModules`.
+*   **Tailwind CSS V3 UI**: Premium layout styled exactly like top-tier modern SaaS products.
+*   **Built-in Dark Mode**: Persistent and perfectly configured theme toggling out of the box.
+*   **Auth Interceptors & Guards**: JWT token handling, HTTP error interception, and route protection.
+*   **Beautiful Dummy Pages**: Includes an analytics Dashboard, User Management table (with mock CRUD), and an elegant Login page.
+*   **Performance Optimized**: Highly scalable folder scale (`core/`, `features/`, `shared/`, `layout/`).
 
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Project Structure 📁
 
 ```bash
-ng generate --help
+src/app/
+ ├── core/          # Interceptors, guards, services, and base API logic
+ ├── features/      # Independent, lazy-loaded page modules (Dashboard, Users, Login)
+ ├── layout/        # The application shell (Sidebar, Header)
+ └── shared/        # Reusable UI components (Tables, Buttons, Alerts)
 ```
 
-## Building
+## Quick Start 🚀
 
-To build the project run:
+Get the environment up and running in 3 easy steps.
 
-```bash
-ng build
-```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/ultimate-angular-boilerplate.git
+   cd ultimate-angular-boilerplate
+   ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-## Running unit tests
+3. **Serve Application Locally**
+   ```bash
+   npm start
+   ```
+   *Navigate to `http://localhost:4200` to view the app!*
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Contributing 🤝
 
-```bash
-ng test
-```
+Contributions follow an open-source model. We welcome all PRs for UI improvements, adding new layout components, or updating package dependencies. Fork the project and start building!
 
-## Running end-to-end tests
+## License 📜
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is licensed under the MIT License - see the LICENSE file for details.
