@@ -1,6 +1,24 @@
 {
   "name": "admin-dashboard",
   "version": "0.0.0",
+  "description": "The Most Modern, Production-Ready Angular 21+ Admin Dashboard Starter Kit built with Standalone Components, Signals, and Tailwind CSS v3.",
+  "keywords": [
+    "angular",
+    "angular21",
+    "admin-dashboard",
+    "boilerplate",
+    "standalone-components",
+    "signals",
+    "tailwind-css",
+    "premium-ui"
+  ],
+  "author": "akshhpatil",
+  "license": "MIT",
+  "homepage": "https://github.com/akshhpatil/admin-dashboard#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshhpatil/admin-dashboard.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
