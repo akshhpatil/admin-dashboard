@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { NgFor, NgIf } from '@angular/common';
+
 
 export interface TableColumn {
   key: string;
@@ -9,7 +9,7 @@ export interface TableColumn {
 @Component({
   selector: 'app-table',
   standalone: true,
-  imports: [NgFor, NgIf],
+  imports: [],
   templateUrl: './table.html',
   styleUrl: './table.css'
 })

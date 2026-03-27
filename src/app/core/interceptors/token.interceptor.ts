@@ -2,7 +2,7 @@
 
 import { HttpInterceptorFn } from '@angular/common/http';
 import { inject } from '@angular/core';
-import { LoaderService } from '../services/loader';
+import { LoaderService } from '../services/loader.service';
 import { finalize } from 'rxjs/operators';
 
 

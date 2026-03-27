@@ -2,31 +2,35 @@
   class="h-screen bg-white dark:bg-gray-950 shadow-md flex flex-col transition-all duration-200"
   [class.w-64]="!collapsed()"
   [class.w-16]="collapsed()"
->
+  >
   <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 dark:border-gray-800">
-    <span
-      *ngIf="!collapsed()"
-      class="font-bold text-gray-800 dark:text-gray-100"
-    >
-      Admin
-    </span>
+    @if (!collapsed()) {
+      <span
+        class="font-bold text-gray-800 dark:text-gray-100"
+        >
+        Admin
+      </span>
+    }
     <button
       class="text-gray-600 dark:text-gray-300 text-sm"
       (click)="toggle()"
-    >
+      >
       ☰
     </button>
   </div>
 
   <nav class="flex-1 mt-4">
-    <a
-      *ngFor="let item of menu"
-      [routerLink]="item.path"
-      routerLinkActive="bg-blue-50 dark:bg-gray-800 text-blue-600"
-      class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-900"
-    >
-      <span>{{ item.icon }}</span>
-      <span *ngIf="!collapsed()">{{ item.label }}</span>
-    </a>
+    @for (item of menu; track item) {
+      <a
+        [routerLink]="item.path"
+        routerLinkActive="bg-blue-50 dark:bg-gray-800 text-blue-600"
+        class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-900"
+        >
+        <span>{{ item.icon }}</span>
+        @if (!collapsed()) {
+          <span>{{ item.label }}</span>
+        }
+      </a>
+    }
   </nav>
 </aside>

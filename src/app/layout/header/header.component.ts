@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../../core/auth/auth';
-import { NgIf } from '@angular/common';
-import { ThemeService } from '../../core/services/theme';
+import { AuthService } from '../../core/services/auth.service';
+
+import { ThemeService } from '../../core/services/theme.service';
 
 @Component({
   selector: 'app-header',

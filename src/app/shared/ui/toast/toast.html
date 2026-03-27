@@ -1,7 +1,9 @@
-<div *ngIf="toast.show()" class="fixed bottom-6 right-6 px-6 py-3 rounded shadow text-white text-sm" [ngClass]="{
+@if (toast.show()) {
+<div class="fixed bottom-6 right-6 px-6 py-3 rounded shadow text-white text-sm" [ngClass]="{
     'bg-green-600': toast.type() === 'success',
     'bg-red-600': toast.type() === 'error',
     'bg-blue-600': toast.type() === 'info'
   }">
     {{ toast.message() }}
-</div>
+  </div>
+}

@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { HeaderComponent } from '../header/header.component';
-import { LoaderComponent } from '../../shared/components/loader/loader';
-import { ToastComponent } from '../../shared/components/toast/toast';
+import { LoaderComponent } from '../../shared/ui/loader/loader';
+import { ToastComponent } from '../../shared/ui/toast/toast';
 
 @Component({
   selector: 'app-layout',

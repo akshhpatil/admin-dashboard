@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { FormsModule } from '@angular/forms';
-import { User } from '../../core/models/user';
-import { UserService } from '../../core/services/user';
-import { ToastService } from '../../core/services/toast';
-import { TableComponent, TableColumn } from '../../shared/components/table/table';
+import { User } from '../../core/types/user';
+import { UserService } from '../../core/api/user.api';
+import { ToastService } from '../../core/services/toast.service';
+import { TableComponent, TableColumn } from '../../shared/ui/table/table';
 
 @Component({
   selector: 'app-users',
   standalone: true,
-  imports: [CommonModule, FormsModule, TableComponent],
+  imports: [FormsModule, TableComponent],
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.css']
 })

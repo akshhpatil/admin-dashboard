@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { AuthGuard } from './core/auth/auth-guard';
-import { RoleGuard } from './core/auth/role-guard';
+import { AuthGuard } from './core/guards/auth.guard';
+import { RoleGuard } from './core/guards/role.guard';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -9,7 +9,7 @@ export const routes: Routes = [
   {
     path: 'login',
     loadComponent: () =>
-      import('./pages/login/login.component')
+      import('./features/login/login.component')
         .then(m => m.LoginComponent),
   },
 
@@ -25,7 +25,7 @@ export const routes: Routes = [
       {
         path: 'dashboard',
         loadComponent: () =>
-          import('./pages/dashboard/dashboard.component')
+          import('./features/dashboard/dashboard.component')
             .then(m => m.DashboardComponent)
       },
 
@@ -34,14 +34,14 @@ export const routes: Routes = [
       //   canActivate: [RoleGuard],
       //   data: { roles: ['admin', 'manager'] },
       //   loadComponent: () =>
-      //     import('./pages/users/users.component')
+      //     import('./features/users/users.component')
       //       .then(m => m.UsersComponent)
       // },
 
       {
         path: 'users',
         loadComponent: () =>
-          import('./pages/users/users.component')
+          import('./features/users/users.component')
             .then(m => m.UsersComponent)
       },
 
@@ -49,7 +49,7 @@ export const routes: Routes = [
       {
         path: 'profile',
         loadComponent: () =>
-          import('./pages/profile/profile.component')
+          import('./features/profile/profile.component')
             .then(m => m.ProfileComponent)
       }
     ]
