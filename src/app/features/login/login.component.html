@@ -76,6 +76,20 @@
           </svg>
         </button>
 
+        <!-- Demo login details -->
+        <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-700/50">
+          <p class="text-[11px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-3 text-center">
+            Demo Credentials
+          </p>
+          <div class="flex justify-center">
+            <button (click)="fillCredentials('admin', '123')"
+              class="w-full flex flex-col items-center p-3 rounded-xl border border-slate-100 dark:border-slate-700 hover:border-blue-200 dark:hover:border-blue-900/50 hover:bg-blue-50/30 dark:hover:bg-blue-900/10 transition-all text-center group">
+              <span class="text-[11px] font-bold text-blue-600 dark:text-blue-400 mb-0.5">Admin Account</span>
+              <span class="text-[12px] text-slate-500 dark:text-slate-400 font-medium tracking-wide">Username: admin / Password: 123</span>
+            </button>
+          </div>
+        </div>
+
         <!-- Error -->
         @if (error) {
         <div

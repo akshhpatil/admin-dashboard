@@ -32,4 +32,9 @@ export class LoginComponent {
     }
   }
 
+  fillCredentials(user: string, pass: string) {
+    this.username = user;
+    this.password = pass;
+    this.error = '';
+  }
 }

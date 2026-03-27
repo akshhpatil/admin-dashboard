@@ -17,14 +17,6 @@ export class AuthService {
       return true;
     }
 
-    if (username === 'manager' && password === '123') {
-      localStorage.setItem('token', 'dummy-token');
-      localStorage.setItem('role', 'manager');
-      this.token.set('dummy-token');
-      this.role.set('manager');
-      return true;
-    }
-
     return false;
   }
 
