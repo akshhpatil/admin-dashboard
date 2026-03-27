@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <h1>Ultimate Angular Boilerplate 🚀</h1>
-  <p>The Most Modern, Production-Ready Angular 20+ Admin Dashboard Starter Kit</p>
+  <p>The Most Modern, Production-Ready Angular 21+ Admin Dashboard Starter Kit</p>
   <p>Built with standalone components, Tailwind CSS v3, and the latest Angular control flow.</p>
 </div>
 
