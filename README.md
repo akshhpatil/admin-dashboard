@@ -9,6 +9,13 @@
 
 ---
 
+<div align="center">
+  <img src="public/images/dashboard-preview.png" width="900" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+  <p><i>Premium Dashboard with Financial Overview and Real-time Analytics</i></p>
+</div>
+
+---
+
 ## Why this Boilerplate? 🤔
 
 Stop wasting time on auth guards, theme toggling, and dashboard layouts. This boilerplate is designed to be **feature-complete**, **performance-optimized**, and **visually stunning** right out of the box.
