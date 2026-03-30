@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" width="100" />
+  <img src="public/images/angular-logo.svg" width="100" />
   <br />
   <h1>Ultimate Angular 21 Boilerplate 🚀</h1>
   <p><strong>The Most Modern, Production-Ready Angular 21+ Admin Dashboard Starter Kit</strong></p>
