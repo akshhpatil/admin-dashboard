@@ -15,7 +15,7 @@ export class ProfileComponent {
     location: 'San Francisco, CA',
     email: 'alex.johnson@example.com',
     phone: '+1 (555) 123-4567',
-    coverImage: 'https://images.unsplash.com/photo-1707343843437-caacff5cfa74?q=80&w=2675&auto=format&fit=crop',
+    coverImage: 'images/profile-cover.png',
     avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026024d',
     followers: 1420,
     following: 384,
